@@ -1,0 +1,71 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card__image {
+    padding-top: 10px;
+    display: flex;
+    background: #B8B8B8;;
+    justify-content: center;
+    align-items: start;
+    height: 180px;
+}
+
+.card__info {
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    background: var(--black);
+    color: var(--white);
+    min-height: 150px; 
+}
+
+.card__tag {
+    margin-bottom: 3px;
+    font-weight: 300;
+    color: #DEDEDE;
+    font-size: 11px;
+    line-height: normal;
+}
+
+.card__name {
+    margin-bottom: 8px;
+    max-height: 48px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 104%;
+    overflow-y: hidden;
+}
+
+.card__author {
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card__footer {
+    margin-top: auto;
+    padding-bottom: 12px;
+    display: flex;
+}
+
+.button_add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 32px;
+    background: none;
+    border-radius: 6px;
+    border: 1px solid var(--white);
+    cursor: pointer;
+}
+
+.button__active {
+    background: var(--white);
+}

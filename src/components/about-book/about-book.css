@@ -1,0 +1,77 @@
+.book__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.book {
+    font-size: 14px;
+}
+
+.book p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.book__characters {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+}
+
+.book__characters span {
+font-weight: 700;
+}
+
+.book__image {
+    display: flex;
+    justify-content: center;
+    width: 165px;
+    height: 214px;
+    background: var(--gray  );
+    border-radius: 6px;
+}
+
+.book__image img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.book__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.book__tags span {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--black);
+    color: var(--black);
+}
+
+
+
+.book__pages {
+    margin-bottom: 14px;
+}
+
+.button_add-book {
+    width: 160px;
+    height: 40px;
+    border-radius: 4px;
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.button_add-book:hover {
+    border: 1px solid red;
+}
