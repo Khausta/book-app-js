@@ -1,0 +1,269 @@
+.header {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 142%;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.menu__item:visited {
+    color: var(--black);
+}
+
+.menu__counter {
+    padding: 0 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 266%;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+}
+.book__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.book {
+    font-size: 14px;
+}
+
+.book p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.book__characters {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+}
+
+.book__characters span {
+font-weight: 700;
+}
+
+.book__image {
+    display: flex;
+    justify-content: center;
+    width: 165px;
+    height: 214px;
+    background: var(--gray  );
+    border-radius: 6px;
+}
+
+.book__image img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.book__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.book__tags span {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--black);
+    color: var(--black);
+}
+
+
+
+.book__pages {
+    margin-bottom: 14px;
+}
+
+.button_add-book {
+    width: 160px;
+    height: 40px;
+    border-radius: 4px;
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.button_add-book:hover {
+    border: 1px solid red;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card__image {
+    padding-top: 10px;
+    display: flex;
+    background: #B8B8B8;;
+    justify-content: center;
+    align-items: start;
+    height: 180px;
+}
+
+.card__info {
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    background: var(--black);
+    color: var(--white);
+    min-height: 150px; 
+}
+
+.card__tag {
+    margin-bottom: 3px;
+    font-weight: 300;
+    color: #DEDEDE;
+    font-size: 11px;
+    line-height: normal;
+}
+
+.card__name {
+    margin-bottom: 8px;
+    max-height: 48px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 104%;
+    overflow-y: hidden;
+}
+
+.card__author {
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card__footer {
+    margin-top: auto;
+    padding-bottom: 12px;
+    display: flex;
+}
+
+.button_add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 32px;
+    background: none;
+    border-radius: 6px;
+    border: 1px solid var(--white);
+    cursor: pointer;
+}
+
+.button__active {
+    background: var(--white);
+}
+.card-list__loader {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.card-list {
+    margin-bottom: 30px;
+}
+
+.card_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 25px;
+
+}
+.search {
+    margin-bottom: 30px;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.search__wrapper {
+    position: relative;
+    display: flex;
+    flex: 1;
+
+}
+
+.search__wrapper img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search__input {
+    padding: 15px 30px 15px 50px ;
+    background: #DEDEDE;
+    border-radius: 5px;
+    border: none;
+    color: #252525;
+    flex: 1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 228%;
+}
+
+.search__input::placeholder {
+    color: #646464;
+}
+
+.search button {
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    background: var(--black);
+    cursor: pointer;
+}
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination_prev, .pagination_next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 142%;
+    color: var(--black);
+    cursor: pointer;
+}
