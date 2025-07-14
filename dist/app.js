@@ -1036,15 +1036,15 @@
             this.el.classList.add('header');
             this.el.innerHTML = `
             <div>
-                <img src="/static/logo.svg" alt="логотип" />
+                <img src="./static/logo.svg" alt="логотип" />
             </div>
             <div class="menu">
                 <a class="menu__item" href="#">
-                <img src="/static/search.svg" alt="Поиск иконка" />
+                <img src="./static/search.svg" alt="Поиск иконка" />
                 Поиск книг
                 </a>
                 <a class="menu__item" href="#favorites">
-                    <img src="/static/favorites.svg" alt="Избранное иконка" />
+                    <img src="./static/favorites.svg" alt="Избранное иконка" />
                     Избранное
                     <div class="menu__counter">
                         ${this.appState.favorites.length}
@@ -1228,8 +1228,8 @@
                 <div class="card__footer">
                     <button class="button_add ${existInFavorites ? 'button__active' : ''}">
                         ${existInFavorites
-                            ? '<img src="/static/favorites.svg" />'
-                            : '<img src="/static/favorites-white.svg" />' 
+                            ? '<img src="./static/favorites.svg" />'
+                            : '<img src="./static/favorites-white.svg" />' 
                         }
                     </button>
                 </div>
@@ -1343,10 +1343,10 @@
                     class="search__input"
                     value="${this.state.searchQuery ? this.state.searchQuery : ''}"
                 />
-                <img src="/static/search.svg" alt="иконка поиска" />
+                <img src="./static/search.svg" alt="иконка поиска" />
             </div>
             <button aria-label="Искать"> 
-                <img src="/static/search-white.svg" alt="иконка поиска" />
+                <img src="./static/search-white.svg" alt="иконка поиска" />
             </button>
         `;
             this.el.querySelector('button').addEventListener('click', this.search.bind(this));
@@ -1442,12 +1442,12 @@
             this.el.classList.add('pagination');
             this.el.innerHTML = `
                 <button class="pagination_prev">
-                    <img src="/static/arrow_back.svg" />
+                    <img src="./static/arrow_back.svg" />
                     Предыдущая страница
                 </button>
                 <button class="pagination_next">
                     Следующая страница
-                    <img src="/static/arrow_next.svg" />
+                    <img src="./static/arrow_next.svg" />
                 </button>
         `;
             this.el.querySelectorAll('button')[0].addEventListener('click', this.#prev.bind(this));

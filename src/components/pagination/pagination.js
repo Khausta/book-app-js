@@ -84,12 +84,12 @@ export class Pagination extends DivComponent{
         this.el.classList.add('pagination');
         this.el.innerHTML = `
                 <button class="pagination_prev">
-                    <img src="/static/arrow_back.svg" />
+                    <img src="./static/arrow_back.svg" />
                     Предыдущая страница
                 </button>
                 <button class="pagination_next">
                     Следующая страница
-                    <img src="/static/arrow_next.svg" />
+                    <img src="./static/arrow_next.svg" />
                 </button>
         `;
         this.el.querySelectorAll('button')[0].addEventListener('click', this.#prev.bind(this))
